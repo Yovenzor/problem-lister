@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems Lister</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="header">
+                <h1>Problems Lister</h1>
+                <p class="subtitle">Organize and prioritize your challenges</p>
+                <p class="date" id="currentDate"></p>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="problemInput" placeholder="What's bothering you today?">
+                <button id="addButton">
+                    <span><i class="ti ti-plus"></i></span> Add
+                </button>
+            </div>
+
+            <div id="problemsList" class="problems-list">
+                <p id="emptyState" class="empty-state">No problems yet. Add one to get started!</p>
+            </div>
+
+            <div class="problem-summary">
+                <h2>Problem Summary</h2>
+                <div class="summary-content">
+                    <div class="total">
+                        <span>Total problems:</span>
+                        <span id="problemCount">0</span>
+                    </div>
+                    <div class="level">
+                        <span>Level:</span>
+                        <span id="problemLevel" class="level-none">None</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="welcomeModal" class="modal">
+                <div class="modal-content">
+                    <h2>Welcome to Problems Lister! 👋</h2>
+                    <p>A simple way to organize and prioritize your problems.</p>
+                    
+                    <div class="feature">
+                        <span class="feature-icon">📝</span>
+                        <div class="feature-text">
+                            <h3>List Your Problems</h3>
+                            <p>Add any problems or challenges you're currently facing.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="feature-icon">↕️</span>
+                        <div class="feature-text">
+                            <h3>Drag to Prioritize</h3>
+                            <p>Drag items up or down to set their priority level. Higher items are more urgent.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="feature-icon">🎨</span>
+                        <div class="feature-text">
+                            <h3>Visual Priority</h3>
+                            <p>Colors indicate priority: red for urgent, orange for high, yellow for medium, and green for low priority.</p>
+                        </div>
+                    </div>
+
+                    <button id="closeModal" class="modal-button">Got it, thanks!</button>
+                </div>
+            </div>
+
+            <footer>
+                Created with ❤️ by <a href="https://twitter.com/YovenzorS" target="_blank">@YovenzorS</a>
+            </footer>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
